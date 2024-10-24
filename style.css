@@ -1,0 +1,273 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url(assets/images/bagground.png);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo{
+    height: 5vh;
+    width: 20vw;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.box{
+    background-color: black;
+    width: 100%;
+    filter: opacity(0.64);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+.netlog{
+    position: relative;
+    width: 200px;
+    z-index: 10;
+    margin-top: 10px;
+}
+nav{
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: auto;
+}
+
+button{
+    position: relative;
+    z-index: 10;
+    width: auto;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 20px;
+}
+.b2{
+    background-color: red;
+}
+.hero{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.sh{
+    color: rgb(251, 251, 251);
+    position: relative;
+}
+.sh1{
+    font-size: 50px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.sh2{
+    margin-top: 20px;
+    font-size: 28px;
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+}
+.sh3{
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+}
+.sh4{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#input1{
+    position: relative;
+    width: 300px;
+    padding: 15px;
+    background-color: black;
+    opacity: 0.6;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.getbot{
+    background-color: red;
+    width: 120px;
+    padding: 12px;
+}
+
+.separation{
+    height: 7px;
+    width: 100%;
+    background-color: rgb(77, 77, 77);
+    filter: opacity(0.74);
+}
+.main2, .main3, .main4, .main5{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+p{
+    color: white;
+}
+.para1, .para3, .para5, .para7{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+.para2, .para4, .para6, .para8{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.image2, .image3, .image4, .image5{
+    position: relative;
+    margin: auto;
+    width: 80%;
+}
+.image2 img, .image3 img, .image4 img, .image5 img{
+    width: 100%;
+}
+.image2 video, .image3 video{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+}
+.subimgofimg4{
+    width: 250px;
+    height: 80px;
+    background-color: black;
+    filter: opacity(0.88);
+    border: 2px solid white;
+    border-radius: 15px;
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.question{
+    width: 90vw;
+    height: auto;
+    padding: 20px;
+    background-color: rgb(68, 68, 68);
+    margin-top: 20px;
+    filter: opacity(0.84);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    .sh1{
+        font-size: 40px;
+    }
+    .sh2{
+        font-size: 20px;
+    }
+    .sh3{
+        font-size: 16px;
+    }
+    #input1{
+        width: 250px;
+        font-size: 16px;
+    }
+    .getbot{
+        width: 100px;
+    }
+    .main2, .main3, .main4, .main5{
+        flex-direction: column;
+        align-items: center;
+    }
+    .para1, .para3, .para5, .para7{
+        font-size: 30px;
+    }
+    .para2, .para4, .para6, .para8{
+        font-size: 16px;
+    }
+    .subimgofimg4{
+        width: 200px;
+        height: 70px;
+        top: 70%;
+        left: 10%;
+    }
+    .image2 video, .image3 video{
+        top: 5%;
+        left: 5%;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .sh1{
+        font-size: 30px;
+    }
+    .sh2{
+        font-size: 18px;
+    }
+    .sh3{
+        font-size: 14px;
+    }
+    #input1{
+        width: 200px;
+        font-size: 14px;
+    }
+    .getbot{
+        width: 80px;
+    }
+    .main2, .main3, .main4, .main5{
+        padding: 10px;
+    }
+    .para1, .para3, .para5, .para7{
+        font-size: 24px;
+    }
+    .para2, .para4, .para6, .para8{
+        font-size: 14px;
+    }
+    .subimgofimg4{
+        width: 180px;
+        height: 60px;
+        top: 75%;
+        left: 5%;
+    }
+    .image2 video, .image3 video{
+        top: 2%;
+        left: 2%;
+        width: 96%;
+    }
+}
